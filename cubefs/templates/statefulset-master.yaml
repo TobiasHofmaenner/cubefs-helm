@@ -31,7 +31,7 @@ spec:
       tolerations:
 {{ toYaml . | indent 8 }}
     {{- end }}
-      # Master can not deploy in a same node, port will conflict.
+      # Master can not deploy in a same node, port will conflict. 
       affinity:
         podAntiAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
